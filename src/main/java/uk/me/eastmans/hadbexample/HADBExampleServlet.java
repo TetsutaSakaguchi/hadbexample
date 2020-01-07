@@ -53,7 +53,7 @@ public class HADBExampleServlet  extends GenericServlet {
         
         //コネクション取得処理
         String result = null;
-        String errinfo = "なし";
+        String errinfo = "Nothing";
         try {
             context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup(jndi);
@@ -72,13 +72,13 @@ public class HADBExampleServlet  extends GenericServlet {
             
         }
         catch(NamingException namingexception) {
-            errinfo = "名前例外";
+            errinfo = "NamingException";
         }
         catch(SQLException sqlexception) {
-            errinfo = "SQL例外";
+            errinfo = "SQLException";
         }
         catch(Exception exception) {
-            errinfo = "その他例外";
+            errinfo = "Exception";
         }
         
         finally {
@@ -102,8 +102,8 @@ public class HADBExampleServlet  extends GenericServlet {
         res.getWriter().println("<html>");
         res.getWriter().println("<h4>");
         res.getWriter().println(message);
-        res.getWriter().println("接続したDB [" + result + "]");
-        res.getWriter().println("DBエラー   [" + errinfo + "]");
+        res.getWriter().println("Connect DB [" + result + "]");
+        res.getWriter().println("DB Error   [" + errinfo + "]");
         res.getWriter().println("</h4>");
         res.getWriter().println("</html>");
     }
