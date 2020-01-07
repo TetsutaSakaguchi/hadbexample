@@ -13,7 +13,9 @@ import java.io.IOException;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.sql.SQLException;
 import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 /**
  * Created by markeastman on 11/08/2016.
