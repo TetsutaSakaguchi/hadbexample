@@ -10,10 +10,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 // DB用import
-import=javax.sql.DataSource;
-import=java.sql.Connection;
-import=java.sql.Statement;
-import=javax.naming.InitialContext;
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.Statement;
+import javax.naming.InitialContext;
 
 /**
  * Created by markeastman on 11/08/2016.
