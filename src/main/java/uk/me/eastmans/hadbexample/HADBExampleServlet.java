@@ -65,7 +65,7 @@ public class HADBExampleServlet  extends GenericServlet {
             result = connection.getMetaData().getDatabaseProductName();
             
             Statement stmt = (Statement) connection.createStatement();
-            String testsql = "create table tomcat_address (id integer, name character varying(20));";
+            String testsql = "create table jbosseap_address (id integer, name character varying(20));";
             stmt.execute(testsql);
             testsql = "commit;";
             stmt.execute(testsql);
