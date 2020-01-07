@@ -102,8 +102,9 @@ public class HADBExampleServlet  extends GenericServlet {
         res.getWriter().println("<html>");
         res.getWriter().println("<h4>");
         res.getWriter().println(message);
-        res.getWriter().println("Connect DB [" + result + "]");
-        res.getWriter().println("DB Error   [" + errinfo + "]");
+        res.getWriter().println("<br>");
+        res.getWriter().println("Connect DB [" + result + "]<br>");
+        res.getWriter().println("DB Error   [" + errinfo + "]<br>");
         res.getWriter().println("</h4>");
         res.getWriter().println("</html>");
     }
